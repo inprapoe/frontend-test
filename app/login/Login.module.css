@@ -1,0 +1,19 @@
+.wrapper {
+  @apply h-screen pt-20 flex flex-col items-center bg-slate-500 bg-opacity-10 backdrop-blur-lg px-5 fixed inset-0 z-50;
+}
+
+.container {
+  @apply w-full max-w-md;
+}
+
+.form {
+  @apply flex flex-col items-center space-y-5 p-10 border bg-white rounded;
+}
+
+.title {
+  @apply font-bold text-3xl;
+}
+
+.inputs {
+  @apply space-y-2 w-full;
+}

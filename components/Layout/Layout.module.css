@@ -1,0 +1,19 @@
+.loading {
+  @apply flex flex-col items-center justify-center h-screen w-full;
+}
+
+.sidebar {
+  @apply w-56 border-r h-screen flex flex-col;
+}
+
+.logo {
+  @apply p-6 w-full font-black text-2xl;
+}
+
+.sidebar__list {
+  @apply h-full w-full px-6 flex flex-col;
+}
+
+.content {
+  @apply flex-1 p-6 overflow-auto bg-slate-100 flex flex-col items-start space-y-6 h-screen;
+}

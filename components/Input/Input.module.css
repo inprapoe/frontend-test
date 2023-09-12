@@ -1,0 +1,20 @@
+.container {
+  @apply flex flex-col;
+}
+
+.label {
+  @apply text-xs font-semibold mb-1;
+}
+
+.input__container {
+  @apply flex items-center w-full  border border-slate-300 transition-all duration-150 ease-in-out rounded bg-white bg-opacity-20;
+}
+.input__container[aria-label="focus"] {
+  @apply border-blue-800;
+}
+.input__container[aria-label="error"] {
+  @apply border-red-600;
+}
+.input {
+  @apply focus:outline-none px-3 h-10 w-full rounded bg-transparent;
+}

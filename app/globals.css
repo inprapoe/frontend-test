@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex text-slate-800;
+}
+
+@layer components {
+  .link {
+    @apply font-semibold transition-all duration-150 ease-in-out flex items-center space-x-2;
+  }
+  .link:hover, .link[aria-label="active"] {
+    @apply text-blue-800
+  }
+
+  .link--btn {
+    @apply rounded px-4 py-2
+  }
+  .link--btn:hover, .link[aria-label="active"].link--btn {
+    @apply bg-blue-100;
+  }
+}

@@ -1,0 +1,11 @@
+.code {
+  @apply text-9xl font-black;
+}
+
+.message {
+  @apply text-3xl font-semibold mb-8;
+}
+
+.action {
+  @apply w-full max-w-sm;
+}
