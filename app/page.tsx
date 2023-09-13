@@ -11,6 +11,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import MessageBox from "@/components/MessageBox/MessageBox";
@@ -25,16 +26,12 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 export const graphChartOptions = {
   responsive: true,
-  plugins: {
-    legend: {
-      position: 'top' as const,
-    },
-  },
   tension: 0.5
 };
 
@@ -51,6 +48,7 @@ export default function Home() {
         data: graph?.data?.counts,
         borderColor: '#1e40af',
         backgroundColor: '#1e40af50',
+        fill: true
       },
     ],
   }
